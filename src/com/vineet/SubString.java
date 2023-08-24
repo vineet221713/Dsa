@@ -8,9 +8,12 @@ public class SubString {
 		String str = "vineet";
 		int n = str.length();
 		for(int i =0; i<n; i++) {
-			String bag = "";
+			
 			for(int j =i; j<n; j++) {
-				bag+=str.charAt(j);
+				String bag = "";
+				for(int k =i; k<=j; k++) {
+					bag+=str.charAt(k);
+				}
 				System.out.println(bag);
 				
 			}
